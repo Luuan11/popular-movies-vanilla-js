@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: #fff;
+    background-color: #17162E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100vw;
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 62px;
+}
+
+.main-search{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 30px;
+    display: flex;
+    background-color: #444557;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.main-search input{
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.main-search img{
+    cursor: pointer;
+    height: 20px;
+}
+
+.main-filter{
+    text-align: center;
+}
+
+.main-filter label{
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.main-movies{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 700px;
+    background: #1D1C3B;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.movies-image img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+}
+
+.movies-image img:hover{
+    transform: scale(1.1);
+}
+
+.movie-informations{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.movie-informations, .movie-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.movie-text{
+    margin-top: 10px;
+    text-align: start;
+    width: 100%;
+}
+
+.movie-informations .movie-text .score-favorite {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.score-favorite{
+    display: flex;
+    width: 100%;
+}
+
+.movie-score{
+    margin-right: 10px;
+}
+
+.movie-favorite img{
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.movie-favorite img:hover{
+    transform: scale(1.1);
+}
+
+.movie-description {
+    max-width: 100%;
+    color: #ACACAC;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    display: flex;  
+    text-align: start;
+}
