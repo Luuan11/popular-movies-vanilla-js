@@ -1,138 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root {
+  --background-color: #17162e;
+}
 
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    color: #fff;
-    background-color: #17162E;
+body {
+    max-width: 1260px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    font-family: "poppins", Arial, Helvetica, sans-serif;
-}
-
-.main{
-    width: 100vw;
-}
-
-.main-title{
-    text-align: center;
-    margin-top: 62px;
-}
-
-.main-search{
-    width: 30%;
+    padding: 2rem;
+    background: var(--background-color);
     margin: 0 auto;
-    margin-top: 48px;
-    margin-bottom: 30px;
-    display: flex;
-    background-color: #444557;
-    padding: 15px;
-    border-radius: 8px;
+    font-family: "poppins", sans-serif;
 }
 
-.main-search input{
-    width: 100%;
-    background-color: inherit;
-    border: none;
-    outline: none;
-    color: #fff;
+main {
+  width: 100%;
 }
 
-.main-search img{
-    cursor: pointer;
-    height: 20px;
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 
-.main-filter{
-    text-align: center;
+.input-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
-.main-filter label{
-    font-size: 18px;
-    margin-left: 5px;
+.input-container input {
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
 }
 
-.main-movies{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 16px;
-    margin-bottom: 48px;
-    border-radius: 8px;
-    padding: 15px;
-    max-width: 700px;
-    background: #1D1C3B;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+.input-container img {
+  cursor: pointer;
 }
 
-.movies-image img{
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    transition: all .3s;
+.showOnlyFavorites {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
 }
 
-.movies-image img:hover{
-    transform: scale(1.1);
+.movie {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #1d1c3b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 1024px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.movie-informations{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 1rem;
+.movie .movie-image {
+  width: 92px;
+  height: 92px;
+  margin-right: 1rem;
 }
 
-.movie-informations, .movie-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.movie .movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
 }
 
-.movie-text{
-    margin-top: 10px;
-    text-align: start;
-    width: 100%;
+.movie .movie-image img:hover {
+  transform: scale(1.1);
 }
 
-.movie-informations .movie-text .score-favorite {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.movie-informations {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.score-favorite{
-    display: flex;
-    width: 100%;
+.movie-informations .movie-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.movie-score{
-    margin-right: 10px;
+.movie-informations .movie-text .rating-favorites {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.movie-favorite img{
-    cursor: pointer;
-    transition: all .3s;
+.movie-informations .rating,
+.movie-informations .favorite {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
 }
 
-.movie-favorite img:hover{
-    transform: scale(1.1);
+.movie-informations .rating img {
+  width: 16px;
+}
+
+.movie-informations .favorite img {
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 1.2rem;
+}
+
+.movie-informations .favorite img:hover {
+  transform: scale(1.1);
 }
 
 .movie-description {
-    max-width: 100%;
-    color: #ACACAC;
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 0.85rem;
-    line-height: 1.5rem;
-    display: flex;  
-    text-align: start;
+  max-width: 50%;
+  color: hwb(0 67% 33%);
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
 }

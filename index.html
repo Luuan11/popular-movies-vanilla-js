@@ -3,53 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Filme</title>
+    <title>Filme Database</title>
 </head>
 <body>
-    <main class="main">
-        <h2 class="main-title">Filmes Populares</h2>
+    <main>
+        <h2>Filmes Populares</h2>
 
-        <section class="main-search">
-            <input type="text" placeholder="Digite algum filme para presquisar...">
-            <img src="assets/img/search-icon.svg" alt="icone de pesquisa">
-        </section>
+        <form class="input-container">
 
-        <section class="main-filter">
-            <input type="checkbox" name="favorites" id="favorites">
-            <label for="favorites">Mostrar apenas meus filmes favoritos</label>
-        </section>
+          <input type="text" name="movie-name" id="movie-name" placeholder="Digite algum filme para pesquisar...">
 
-        <section class="main-movies">
-            <div class="section-movies">
-                <div class="movies-image">
-                    <img src="https://img.elo7.com.br/product/original/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg" alt="Filme do batman">
-                </div>
-                    <div class="movie-informations">
-                    <div class="movie-text">
-                        <h3>Batman</h3>
-                    </div>
-                        <div class="score-favorite">
-                            <div class="movie-score">
-                                <img src="assets/img/star.png" alt="Icone da estrela">
-                                <span>9.2</span>
-                            </div>
-                            <div class="movie-favorite">
-                                <img src="assets/img/heart.png" alt="Icone de favoritar">
-                                <span>Favoritar</span>
-                            </div>
-                    </div>
-                </div>
-                <div class="movie-description">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos cumque tenetur magnam, nam quae, quam nesciunt magni adipisci, reprehenderit necessitatibus praesentium. Ex cupiditate iusto error eveniet, quia harum dolores perferendis!</p>
-                </div>
-            </div>
-        </section>
-    </main>
+          <img src="assets/img/search-icon.svg" alt="Ícone de pesquisa" class="searchIcon">
 
-    <script src="assets/js/main.js"></script>
+        </form>
+        <div class="showOnlyFavorites">
+
+          <input type="checkbox" name="onlyFavorites" id="onlyFavorites">
+
+          <label for="onlyFavorites">Mostrar apenas meus filmes favoritos</label>
+
+        </div>
+        <div class="movies"></div>
+      </main>
+
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>
