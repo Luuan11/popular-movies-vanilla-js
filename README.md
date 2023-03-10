@@ -12,3 +12,11 @@ esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML, CSS
 - Javascript
 - Api TheMovieDb
+
+## Clone
+
+    - Clonar repositorio 
+    $ git clone https://github.com/Luuan11/popular-movies-vanilla-js.git
+
+---
+Made with 💜 by [Luan Fernando](https://www.linkedin.com/in/luan-fernando/).
