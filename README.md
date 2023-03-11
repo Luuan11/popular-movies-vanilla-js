@@ -14,7 +14,7 @@ esse projeto foi desenvolvido com as seguintes tecnologias:
 - Api TheMovieDb
 
 ### ⚙️ To Work:
-Para funcionar, lembre-se de entrar no site <a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank">TheMoviesDb</a> e seguir a documentação.
+Para funcionar, lembre-se de entrar no site <a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank">TheMoviesDb</a> e seguir a documentação!
 
 ## Clone
 
